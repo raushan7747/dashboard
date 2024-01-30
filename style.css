@@ -205,8 +205,8 @@ body header .right #contact {
 
     body header .navBar ul li a {
         position: fixed;
-        margin-top: 1%;
-        font-size: 30%;
+        margin-top: -.1%;
+        font-size: 20%;
     }
 
     body header .navBar .right ul li a:hover {
@@ -254,8 +254,8 @@ body header .right #contact {
     body header .right #services,
     body header .right #projects,
     body header .right #contact {
-        margin: .31vh;
-        font-size: 50%;
+        margin: .41vh;
+        font-size: 40%;
     }
 
     .leftSideBar {
