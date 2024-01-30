@@ -103,7 +103,7 @@ body header .navBar #navBar button {
 body header .navBar .right {
     background-color: var(--text);
     position: fixed;
-    height: 100vh;
+    height: 100%;
     left: 0%;
     /* left: -100%; */
     top: 10%;
@@ -191,6 +191,76 @@ body header .right #contact {
 
     .leftSideBar {
         left: 4vw;
+    }
+
+}
+@media screen and (max-width: 450px) {
+    body header .navBar .heading {
+        font-size: .6rem;
+    }
+
+    body header .navBar {
+        height: 3vh;
+    }
+
+    body header .navBar ul li a {
+        position: fixed;
+        margin-top: 1%;
+        font-size: 30%;
+    }
+
+    body header .navBar .right ul li a:hover {
+        font-size: 1.1rem;
+    }
+
+    main .firstSection {
+        border-bottom: solid .5px;
+    }
+
+    main .firstSection .leftSection {
+        left: 15%;
+        top: 3%;
+        font-size: 0.6rem;
+    }
+
+    main .firstSection .rightSection {
+        width: 40%;
+        margin-top: -25%;
+        margin-right: -2%;
+    }
+
+    main .firstSection .rightSection img {
+        width:  60%;
+    }
+
+    main .firstSection .leftSection div {
+        width: 25vw;
+        margin-left: 1%;
+    }
+
+    body header .navBar #navBar button {
+        width: 3%;
+        top: .5vh;
+        font-size: 35%;
+    }
+
+    body header .navBar .right {
+        top: 3%;
+        width: 13%;
+    }
+
+    body header .right #home,
+    body header .right #about,
+    body header .right #services,
+    body header .right #projects,
+    body header .right #contact {
+        margin: .31vh;
+        font-size: 50%;
+    }
+
+    .leftSideBar {
+        left: 5vw;
+        top: 4%;
     }
 
 }
