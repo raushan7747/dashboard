@@ -37,6 +37,7 @@ body header .navBar {
 body header .navBar ul li a {
     text-decoration: none;
     color: var(--body-color);
+    font-size: 20%;
 }
 
 body header .navBar .right ul {
@@ -106,7 +107,7 @@ body header .navBar .right {
     height: 100%;
     left: 0%;
     /* left: -100%; */
-    top: 10%;
+    top: 13%;
     width: 13vw;
 }
 
@@ -247,7 +248,7 @@ body header .right #contact {
     }
 
     body header .navBar .right {
-        top: 3%;
+        top: 3.5%;
         width: 13%;
     }
 
