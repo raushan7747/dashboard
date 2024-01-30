@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Raushan kumar">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Portfolio</title>
+    <script src="https://kit.fontawesome.com/f61c139840.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navBar">
+            <div id="navBar">
+                <button>
+                    <i class="fa-sharp fa-solid fa-bars fa-beat-fade"></i>
+                </button>
+            </div>
+            <div class="right">
+                <ul class="leftSideBar">
+                    <li><i class="fa-solid fa-house" id="home"></i><a href="/">Home</a></li><br>
+                    <li><i class="fa-regular fa-envelope" id="about"></i><a href="">About</a></li><br>
+                    <li><i class="fa-regular fa-envelope" id="services"></i><a href="">Services</a></li><br>
+                    <li><i class="fa-regular fa-envelope" id="projects"></i><a href="">Projects</a></li><br>
+                    <li><i class="fa-regular fa-envelope" id="contact"></i><a href="">Contact&nbsp;Me</a></li><br>
+                </ul>
+            </div>
+            <div class="heading">Raushan's Portfolio</div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, I am<span class="purple">&nbsp;Raushan</span>
+                <div>and I am a passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="portfolio home.png" alt="bg-img">
+            </div>
+        </section>
+    </main>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['<i>Web Developer</i>', 'Software Developer', '&amp; enthusiast in the programming world'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>

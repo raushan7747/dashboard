@@ -1,0 +1,128 @@
+:root {
+    --body-color: rgb(7, 7, 41);
+    --text-hover: rgb(125, 125, 221);
+    --purple-color: rgb(179, 69, 179);
+    --header: rgb(18, 18, 80);
+    --text: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header .navBar {
+    position: sticky;
+    background-color: var(--header);
+}
+
+body header .navBar .heading {
+    font-size: 1.5rem;
+    position: absolute;
+    right: 13vw;
+}
+
+body {
+    background-color: var(--body-color);
+    color: var(--text);
+    font-family: 'Poppins', sans-serif;
+}
+
+body header .navBar {
+    display: flex;
+    align-items: center;
+    height: 10vh;
+}
+
+body header .navBar ul li a {
+    text-decoration: none;
+    color: var(--body-color);
+}
+body header .navBar .right ul{
+    list-style-type: none;
+}
+body header .navBar .right ul li a:hover {
+    color: var(--purple-color);
+    font-size: 1.3rem;
+}
+
+main .firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: solid .1px var(--text);
+    width: 100%;
+}
+
+main .leftSection .purple {
+    color: var(--purple-color);
+}
+
+main .firstSection .leftSection #element {
+    box-sizing: border-box;
+    color: rgb(179, 69, 179);
+}
+
+main .firstSection .leftSection {
+    position: absolute;
+    left: 22%;
+    top: 10%;
+    font-size: 2rem;
+    width: 30vw;
+}
+
+main .firstSection .rightSection {
+    position: absolute;
+    right: 0;
+    top: 10%;
+    width: 34vw;
+}
+
+main .firstSection .rightSection img {
+    width: 100%;
+    margin: 5vh 0;
+}
+
+main .firstSection .leftSection div {
+    box-sizing: border-box;
+    width: 30vw;
+}
+
+body header .navBar #navBar button {
+    position: fixed;
+    margin-left: 1vw;
+    left: -.5vw;
+    top: 2.5vh;
+    width: 1.6vw;
+    cursor: pointer;
+
+}
+
+body header .navBar .right {
+    background-color: var(--text);
+    position: fixed;
+    height: 100vh;
+    left: 0%;
+    /* left: -100%; to hide navbar */
+    top: 10%;
+    width: 13vw;
+}
+
+body header .right #home,
+body header .right #about,
+body header .right #services,
+body header .right #projects,
+body header .right #contact {
+    color: var(--body-color);
+    display: inline-block;
+    position: fixed;
+    left: 0vw;
+    margin: 1vh;
+    cursor: pointer;
+    /* left: -100%; */
+}
+
+.leftSideBar {
+    position: fixed;
+    left: 3vw;
+}
