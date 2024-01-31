@@ -11,17 +11,6 @@
     padding: 0;
 }
 
-header .navBar {
-    position: sticky;
-    background-color: var(--header);
-}
-
-body header .navBar .heading {
-    font-size: 1.5rem;
-    position: absolute;
-    right: 13vw;
-}
-
 body {
     background-color: var(--body-color);
     color: var(--text);
@@ -32,19 +21,73 @@ body header .navBar {
     display: flex;
     align-items: center;
     height: 10vh;
+    position: relative;
+    background-color: var(--header);
 }
 
-body header .navBar ul li a {
-    text-decoration: none;
-    color: var(--body-color);
-    font-size: 50%;
+body header .navBar .headFlex {
+    display: flex;
+    z-index: 10;
+    justify-content: space-around;
+    height: 6vh;
+    flex-wrap: wrap;
 }
 
-body header .navBar .right ul {
+body header .navBar .headFlex #navBar button {
+    position: fixed;
+    margin-left: 1vw;
+    top: 1.5vh;
+    align-items: center;
+    width: 2.6vw;
+    cursor: pointer;
+    float: left;
+    font-size: 1vw;
+}
+
+body header .navBar .headFlex .heading {
+    align-self: flex-end;
+    font-size: 1.5rem;
+    position: absolute;
+    right: 13vw;
+}
+
+body header .navBar .leftNavSlide {
+    background-color: var(--text);
+    position: fixed;
+    height: 100%;
+    left: 0%;
+    top: 10.5%;
+    width: 15vw;
+}
+
+body header .navBar .leftNavSlide .leftSideBar_un-orderedList {
+    position: fixed;
+    font-size: .51rem;
+    left: 3vw;
+    margin: 0.6% .1%;
     list-style-type: none;
 }
 
-body header .navBar .right ul li a:hover {
+body header .leftNavSlide .leftSideBar_un-orderedList #home,
+body header .leftNavSlide .leftSideBar_un-orderedList #about,
+body header .leftNavSlide .leftSideBar_un-orderedList #services,
+body header .leftNavSlide .leftSideBar_un-orderedList #projects,
+body header .leftNavSlide .leftSideBar_un-orderedList #contact {
+    color: var(--body-color);
+    display: inline-block;
+    position: fixed;
+    left: 0vw;
+    margin: 1vh;
+    cursor: pointer;
+}
+
+body header .navBar .leftNavSlide .leftSideBar_un-orderedList li a {
+    text-decoration: none;
+    color: var(--body-color);
+    font-size: .6rem
+}
+
+body header .navBar .leftNavSlide .leftSideBar_un-orderedList li a:hover {
     color: var(--purple-color);
     font-size: 1.3rem;
 }
@@ -57,33 +100,17 @@ main .firstSection {
     width: 100%;
 }
 
-main .leftSection .purple {
-    color: var(--purple-color);
-}
-
-main .firstSection .leftSection #element {
-    box-sizing: border-box;
-    color: rgb(179, 69, 179);
-}
-
 main .firstSection .leftSection {
     position: absolute;
-    left: 22%;
-    top: 10%;
+    left: 9%;
+    top: 7%;
     font-size: 2rem;
-    width: 30vw;
+    width: 47vw;
+    height: 100vh;
 }
 
-main .firstSection .rightSection {
-    position: absolute;
-    right: 0;
-    top: 10%;
-    width: 34vw;
-}
-
-main .firstSection .rightSection img {
-    width: 100%;
-    margin: 5vh 0;
+main .firstSection .leftSection .purple {
+    color: var(--purple-color);
 }
 
 main .firstSection .leftSection div {
@@ -91,179 +118,179 @@ main .firstSection .leftSection div {
     width: 30vw;
 }
 
-body header .navBar #navBar button {
-    position: fixed;
-    margin-left: 1vw;
-    left: -.5vw;
-    top: 2.5vh;
-    width: 1.6vw;
-    cursor: pointer;
-
+main .firstSection .leftSection #element {
+    box-sizing: border-box;
+    color: rgb(179, 69, 179);
 }
 
-body header .navBar .right {
-    background-color: var(--text);
-    position: fixed;
-    height: 100%;
-    left: 0%;
-    /* left: -100%; */
-    top: 10.5%;
-    width: 13vw;
+main .firstSection .rightSection {
+    position: absolute;
+    right: 0;
+    top: 7%;
+    width: 43vw;
+    height: 100vh;
 }
 
-body header .right #home,
-body header .right #about,
-body header .right #services,
-body header .right #projects,
-body header .right #contact {
-    color: var(--body-color);
-    display: inline-block;
-    position: fixed;
-    left: 0vw;
-    margin: 1vh;
-    cursor: pointer;
-    /* left: -100%; */
+main .firstSection .rightSection img {
+    width: 100%;
+    margin: 5vh 0;
 }
 
-.leftSideBar {
-    position: fixed;
-    left: 3vw;
-}
-
-@media screen and (max-width: 600px) {
-    body header .navBar .heading {
-        font-size: 1rem;
-    }
-
+@media screen and (min-width: 1200px) {
     body header .navBar {
         height: 6vh;
     }
 
-    body header .navBar ul li a {
-        position: fixed;
-        font-size: 15%;
-        margin-top: .9%;
+    body header .navBar .headFlex #navBar button {
+        font-size: .7vw;
+        width: 1.5vw;
+        top: 1.5vh;
     }
 
-    body header .navBar .right ul li a:hover {
-        font-size: 1.1rem;
+    body header .navBar .leftNavSlide {
+        width: 8vw;
+        top: 6.2vh;
     }
 
-    main .firstSection {
-        border-bottom: solid .5px;
+    body header .navBar .leftNavSlide .leftSideBar_un-orderedList {
+        margin: 0vh -1vw;
     }
 
-    main .firstSection .leftSection {
-        left: 15%;
-        top: 6%;
-        font-size: 1rem;
-    }
-
-    main .firstSection .rightSection {
-        width: 40%;
-        margin-top: -5%;
-        margin-right: -10%;
-    }
-
-    main .firstSection .rightSection img {
-        width:  70%;
-    }
-
-    main .firstSection .leftSection div {
-        width: 20vw;
-    }
-
-    body header .navBar #navBar button {
-        width: 3.5%;
-        top: .5vh;
-    }
-
-    body header .navBar .right {
-        top: 6.5%;
-        width: 13%;
-    }
-
-    body header .right #home,
-    body header .right #about,
-    body header .right #services,
-    body header .right #projects,
-    body header .right #contact {
-        margin: .71vh;
-        font-size: 30%;
-    }
-
-    .leftSideBar {
-        left: 4vw;
-    }
-
-}
-@media screen and (max-width: 450px) {
-    body header .navBar .heading {
-        font-size: .6rem;
-    }
-
-    body header .navBar {
-        height: 3vh;
-    }
-
-    body header .navBar ul li a {
-        position: fixed;
-        margin-top: .9%;
-        font-size: 15%;
-    }
-
-    body header .navBar .right ul li a:hover {
-        font-size: 1.1rem;
-    }
-
-    main .firstSection {
-        border-bottom: solid .5px;
+    body header .leftNavSlide .leftSideBar_un-orderedList #home,
+    body header .leftNavSlide .leftSideBar_un-orderedList #about,
+    body header .leftNavSlide .leftSideBar_un-orderedList #services,
+    body header .leftNavSlide .leftSideBar_un-orderedList #projects,
+    body header .leftNavSlide .leftSideBar_un-orderedList #contact {
+        margin: 0.5vh .5vw;
     }
 
     main .firstSection .leftSection {
-        left: 15%;
-        top: 3%;
-        font-size: 0.6rem;
+        width: 47vw;
+        height: 100vh;
+        left: 9%;
+        top: 7%;
     }
 
     main .firstSection .rightSection {
-        width: 40%;
-        margin-top: -25%;
-        margin-right: -2%;
-    }
-
-    main .firstSection .rightSection img {
-        width:  60%;
-    }
-
-    main .firstSection .leftSection div {
-        width: 25vw;
-        margin-left: 1%;
-    }
-
-    body header .navBar #navBar button {
-        width: 3%;
-        top: .5vh;
-        font-size: 35%;
-    }
-
-    body header .navBar .right {
-        top: 3.5%;
-        width: 13%;
-    }
-
-    body header .right #home,
-    body header .right #about,
-    body header .right #services,
-    body header .right #projects,
-    body header .right #contact {
-        margin: .41vh;
-        font-size: 40%;
-    }
-
-    .leftSideBar {
-        left: 5vw;
-        top: 4%;
+        top: 7%;
+        width: 43vw;
+        height: 100vh;
     }
 
 }
+
+/* @media screen and (min-width: 900px) {
+    body header .navBar .headFlex {
+        height: 5vh;
+    }
+
+    body header .navBar .headFlex #navBar button {
+        font-size: .7vw;
+        width: 1.5vw;
+        top: 3.5vh;
+    }
+
+    body header .navBar .leftNavSlide {
+        width: 8vw;
+    }
+
+    body header .navBar .leftNavSlide .leftSideBar_un-orderedList {
+        margin: 0vh -1vw;
+    }
+
+    body header .leftNavSlide .leftSideBar_un-orderedList #home,
+    body header .leftNavSlide .leftSideBar_un-orderedList #about,
+    body header .leftNavSlide .leftSideBar_un-orderedList #services,
+    body header .leftNavSlide .leftSideBar_un-orderedList #projects,
+    body header .leftNavSlide .leftSideBar_un-orderedList #contact {
+        margin: 0.5vh .5vw;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    body header .navBar .headFlex {
+        height: 5vh;
+    }
+
+    body header .navBar .headFlex #navBar button {
+        font-size: .7vw;
+        width: 1.5vw;
+        top: 3.5vh;
+    }
+
+    body header .navBar .leftNavSlide {
+        width: 8vw;
+    }
+
+    body header .navBar .leftNavSlide .leftSideBar_un-orderedList {
+        margin: 0vh -1vw;
+    }
+
+    body header .leftNavSlide .leftSideBar_un-orderedList #home,
+    body header .leftNavSlide .leftSideBar_un-orderedList #about,
+    body header .leftNavSlide .leftSideBar_un-orderedList #services,
+    body header .leftNavSlide .leftSideBar_un-orderedList #projects,
+    body header .leftNavSlide .leftSideBar_un-orderedList #contact {
+        margin: 0.5vh .5vw;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    body header .navBar .headFlex {
+        height: 5vh;
+    }
+
+    body header .navBar .headFlex #navBar button {
+        font-size: .7vw;
+        width: 1.5vw;
+        top: 3.5vh;
+    }
+
+    body header .navBar .leftNavSlide {
+        width: 8vw;
+    }
+
+    body header .navBar .leftNavSlide .leftSideBar_un-orderedList {
+        margin: 0vh -1vw;
+    }
+
+    body header .leftNavSlide .leftSideBar_un-orderedList #home,
+    body header .leftNavSlide .leftSideBar_un-orderedList #about,
+    body header .leftNavSlide .leftSideBar_un-orderedList #services,
+    body header .leftNavSlide .leftSideBar_un-orderedList #projects,
+    body header .leftNavSlide .leftSideBar_un-orderedList #contact {
+        margin: 0.5vh .5vw;
+    }
+
+}
+
+@media screen and (min-width: 1200px) {
+    body header .navBar .headFlex {
+        height: 5vh;
+    }
+
+    body header .navBar .headFlex #navBar button {
+        font-size: .7vw;
+        width: 1.5vw;
+        top: 3.5vh;
+    }
+
+    body header .navBar .leftNavSlide {
+        width: 8vw;
+    }
+
+    body header .navBar .leftNavSlide .leftSideBar_un-orderedList {
+        margin: 0vh -1vw;
+    }
+
+    body header .leftNavSlide .leftSideBar_un-orderedList #home,
+    body header .leftNavSlide .leftSideBar_un-orderedList #about,
+    body header .leftNavSlide .leftSideBar_un-orderedList #services,
+    body header .leftNavSlide .leftSideBar_un-orderedList #projects,
+    body header .leftNavSlide .leftSideBar_un-orderedList #contact {
+        margin: 0.5vh .5vw;
+    }
+
+} */
