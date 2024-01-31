@@ -20,7 +20,7 @@ body {
 body header .navBar {
     display: flex;
     align-items: center;
-    height: 10vh;
+    height: 12vh;
     position: relative;
     background-color: var(--header);
 }
@@ -29,7 +29,7 @@ body header .navBar .headFlex {
     display: flex;
     z-index: 10;
     justify-content: space-around;
-    height: 6vh;
+    height: 3vh;
     flex-wrap: wrap;
 }
 
@@ -41,22 +41,22 @@ body header .navBar .headFlex #navBar button {
     width: 2.6vw;
     cursor: pointer;
     float: left;
-    font-size: 1vw;
+    font-size: 0.5vw;
 }
 
 body header .navBar .headFlex .heading {
     align-self: flex-end;
     font-size: 1.5rem;
     position: absolute;
-    right: 13vw;
+    right: 1vw;
 }
 
 body header .navBar .leftNavSlide {
     background-color: var(--text);
     position: fixed;
-    height: 100%;
+    height: 100vh;
     left: 0%;
-    top: 10.5%;
+    top: 8.7vh;
     width: 15vw;
 }
 
@@ -64,7 +64,7 @@ body header .navBar .leftNavSlide .leftSideBar_un-orderedList {
     position: fixed;
     font-size: .51rem;
     left: 3vw;
-    margin: 0.6% .1%;
+    margin: 0.6vh .1vw;
     list-style-type: none;
 }
 
@@ -97,16 +97,16 @@ main .firstSection {
     justify-content: space-around;
     align-items: center;
     border-bottom: solid .1px var(--text);
-    width: 100%;
+    width: 100vw;
 }
 
 main .firstSection .leftSection {
     position: absolute;
-    left: 9%;
-    top: 7%;
+    left: 9vw;
+    top: 7vh;
     font-size: 2rem;
     width: 47vw;
-    height: 100vh;
+    height: 60vh;
 }
 
 main .firstSection .leftSection .purple {
@@ -126,19 +126,19 @@ main .firstSection .leftSection #element {
 main .firstSection .rightSection {
     position: absolute;
     right: 0;
-    top: 7%;
+    top: 7vh;
     width: 43vw;
-    height: 100vh;
+    height: 60vh;
 }
 
 main .firstSection .rightSection img {
-    width: 100%;
+    width: 30vw;
     margin: 5vh 0;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 1280px) and (max-height: 1280px) {
     body header .navBar {
-        height: 6vh;
+        height: 10vh;
     }
 
     body header .navBar .headFlex #navBar button {
@@ -166,20 +166,20 @@ main .firstSection .rightSection img {
 
     main .firstSection .leftSection {
         width: 47vw;
-        height: 100vh;
-        left: 9%;
-        top: 7%;
+        height: 60vh;
+        left: 9vw;
+        top: 7vh;
     }
 
     main .firstSection .rightSection {
         top: 7%;
         width: 43vw;
-        height: 100vh;
+        height: 60vh;
     }
 
 }
 
-@media screen and (max-width: 950px) {
+@media screen and (max-width: 1260px) and (min-height: 300px) {
     body header .navBar {
         height: 3.5vh;
     }
@@ -190,20 +190,20 @@ body header .navBar .headFlex .heading {
 }
 
 body header .navBar .headFlex #navBar button {
-    font-size: 2vw;
-    width: 2.5vw;
-    top: 1vh;
+    font-size: 1vw;
+    width: 1.5vw;
+    top: 2vh;
 }
 
 body header .navBar .leftNavSlide {
-    width: 14vw;
-    top: 3.7vh;
+    width: 12vw;
+    top: 10.7vh;
 }
 
 body header .navBar .leftNavSlide .leftSideBar_un-orderedList {
     margin: 0.01vh .1vw;
     font-size: 1.90vw;
-    left: 2vw;
+    left: 1vw;
 }
 
 body header .leftNavSlide .leftSideBar_un-orderedList #home,
@@ -211,7 +211,7 @@ body header .leftNavSlide .leftSideBar_un-orderedList #about,
 body header .leftNavSlide .leftSideBar_un-orderedList #services,
 body header .leftNavSlide .leftSideBar_un-orderedList #projects,
 body header .leftNavSlide .leftSideBar_un-orderedList #contact {
-    margin: 0.5vh .5vw;
+    margin: 2.5vh .5vw;
 }
 
 body header .navBar .leftNavSlide .leftSideBar_un-orderedList li a {
@@ -227,13 +227,131 @@ body header .navBar .leftNavSlide .leftSideBar_un-orderedList li a {
 main .firstSection .leftSection {
     width: 47vw;
     font-size: 2vw;
-    height: 100vh;
-    left: 15%;
-    top: 4%;
+    height: 60vh;
+    left: 15vw;
+    top: 12vh;
 }
 
 main .firstSection .rightSection {
-    top: -2%;
-    width: 41vw;
-    height: 100vh;
+    top: 0vh;
+    width: 36vw;
+    height: 60vh;
+}
+
+@media screen and (min-width: 300px) and (max-height: 900px) {
+    body header .navBar {
+        height: 4vh;
+    }
+}
+
+body header .navBar .headFlex .heading {
+    bottom: 0vh;
+}
+
+body header .navBar .headFlex #navBar button {
+    font-size: 1vw;
+    width: 2vw;
+    top: 2vh;
+}
+
+body header .navBar .leftNavSlide {
+    width: 12vw;
+    top: 4.2vh;
+}
+
+body header .navBar .leftNavSlide .leftSideBar_un-orderedList {
+    margin: 0.01vh .1vw;
+    font-size: 1.90vw;
+    left: 1vw;
+}
+
+body header .leftNavSlide .leftSideBar_un-orderedList #home,
+body header .leftNavSlide .leftSideBar_un-orderedList #about,
+body header .leftNavSlide .leftSideBar_un-orderedList #services,
+body header .leftNavSlide .leftSideBar_un-orderedList #projects,
+body header .leftNavSlide .leftSideBar_un-orderedList #contact {
+    margin: .5vh .5vw;
+}
+
+body header .navBar .leftNavSlide .leftSideBar_un-orderedList li a {
+    text-decoration: none;
+    color: var(--body-color);
+    font-size: 1.5vw;
+    margin-left: 1.5vw;
+    margin: 0vh 1.5vw;
+    top: 0.3vh;
+    position: relative;
+}
+
+main .firstSection .leftSection {
+    width: 47vw;
+    font-size: 2vw;
+    height: 60vh;
+    left: 15vw;
+    top: 5vh;
+}
+
+main .firstSection .rightSection {
+    top: 0vh;
+    width: 36vw;
+    height: 60vh;
+}
+
+@media screen and (min-width: 300px) and (min-height: 350px) and (max-height: 1280px) and (max-width: 2060px) {
+    body header .navBar {
+        height: 4.5vh;
+    }
+}
+
+body header .navBar .headFlex .heading {
+    top: 0vh;
+    font-size: 1vw;
+}
+
+body header .navBar .headFlex #navBar button {
+    font-size: 0.5vw;
+    width: 1vw;
+    top: 1vh;
+}
+
+body header .navBar .leftNavSlide {
+    width: 13vw;
+    top: 5.13vh;
+}
+
+body header .navBar .leftNavSlide .leftSideBar_un-orderedList {
+    margin: 0.01vh .1vw;
+    font-size: 1.90vw;
+    left: 1vw;
+}
+
+body header .leftNavSlide .leftSideBar_un-orderedList #home,
+body header .leftNavSlide .leftSideBar_un-orderedList #about,
+body header .leftNavSlide .leftSideBar_un-orderedList #services,
+body header .leftNavSlide .leftSideBar_un-orderedList #projects,
+body header .leftNavSlide .leftSideBar_un-orderedList #contact {
+    margin: 1.5vh .6vw;
+}
+
+body header .navBar .leftNavSlide .leftSideBar_un-orderedList li a {
+    text-decoration: none;
+    color: var(--body-color);
+    font-size: 1.5vw;
+    margin: 0vh 2.5vw;
+    top: 0.3vh;
+    position: relative;
+}
+
+main .firstSection .leftSection {
+    width: 47vw;
+    font-size: 2vw;
+    height: 60vh;
+    left: 15vw;
+    top: 7vh;
+}
+
+main .firstSection .rightSection {
+    top: 0vh;
+    width: 36vw;
+    height: 60vh;
 }
