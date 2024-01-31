@@ -89,7 +89,7 @@ body header .navBar .leftNavSlide .leftSideBar_un-orderedList li a {
 
 body header .navBar .leftNavSlide .leftSideBar_un-orderedList li a:hover {
     color: var(--purple-color);
-    font-size: 1.3rem;
+    font-size: .8vw;
 }
 
 main .firstSection {
@@ -136,7 +136,7 @@ main .firstSection .rightSection img {
     margin: 5vh 0;
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1000px) {
     body header .navBar {
         height: 6vh;
     }
@@ -144,7 +144,7 @@ main .firstSection .rightSection img {
     body header .navBar .headFlex #navBar button {
         font-size: .7vw;
         width: 1.5vw;
-        top: 1.5vh;
+        top: 2.5vh;
     }
 
     body header .navBar .leftNavSlide {
@@ -179,118 +179,51 @@ main .firstSection .rightSection img {
 
 }
 
-/* @media screen and (min-width: 900px) {
-    body header .navBar .headFlex {
-        height: 5vh;
+@media screen and (max-width: 950px) {
+    body header .navBar {
+        height: 3.5vh;
     }
-
-    body header .navBar .headFlex #navBar button {
-        font-size: .7vw;
-        width: 1.5vw;
-        top: 3.5vh;
-    }
-
-    body header .navBar .leftNavSlide {
-        width: 8vw;
-    }
-
-    body header .navBar .leftNavSlide .leftSideBar_un-orderedList {
-        margin: 0vh -1vw;
-    }
-
-    body header .leftNavSlide .leftSideBar_un-orderedList #home,
-    body header .leftNavSlide .leftSideBar_un-orderedList #about,
-    body header .leftNavSlide .leftSideBar_un-orderedList #services,
-    body header .leftNavSlide .leftSideBar_un-orderedList #projects,
-    body header .leftNavSlide .leftSideBar_un-orderedList #contact {
-        margin: 0.5vh .5vw;
-    }
-
 }
 
-@media screen and (min-width: 1200px) {
-    body header .navBar .headFlex {
-        height: 5vh;
-    }
-
-    body header .navBar .headFlex #navBar button {
-        font-size: .7vw;
-        width: 1.5vw;
-        top: 3.5vh;
-    }
-
-    body header .navBar .leftNavSlide {
-        width: 8vw;
-    }
-
-    body header .navBar .leftNavSlide .leftSideBar_un-orderedList {
-        margin: 0vh -1vw;
-    }
-
-    body header .leftNavSlide .leftSideBar_un-orderedList #home,
-    body header .leftNavSlide .leftSideBar_un-orderedList #about,
-    body header .leftNavSlide .leftSideBar_un-orderedList #services,
-    body header .leftNavSlide .leftSideBar_un-orderedList #projects,
-    body header .leftNavSlide .leftSideBar_un-orderedList #contact {
-        margin: 0.5vh .5vw;
-    }
-
+body header .navBar .headFlex .heading {
+    top: 0vh;
 }
 
-@media screen and (min-width: 1200px) {
-    body header .navBar .headFlex {
-        height: 5vh;
-    }
-
-    body header .navBar .headFlex #navBar button {
-        font-size: .7vw;
-        width: 1.5vw;
-        top: 3.5vh;
-    }
-
-    body header .navBar .leftNavSlide {
-        width: 8vw;
-    }
-
-    body header .navBar .leftNavSlide .leftSideBar_un-orderedList {
-        margin: 0vh -1vw;
-    }
-
-    body header .leftNavSlide .leftSideBar_un-orderedList #home,
-    body header .leftNavSlide .leftSideBar_un-orderedList #about,
-    body header .leftNavSlide .leftSideBar_un-orderedList #services,
-    body header .leftNavSlide .leftSideBar_un-orderedList #projects,
-    body header .leftNavSlide .leftSideBar_un-orderedList #contact {
-        margin: 0.5vh .5vw;
-    }
-
+body header .navBar .headFlex #navBar button {
+    font-size: 2vw;
+    width: 2.5vw;
+    top: 1vh;
 }
 
-@media screen and (min-width: 1200px) {
-    body header .navBar .headFlex {
-        height: 5vh;
-    }
+body header .navBar .leftNavSlide {
+    width: 14vw;
+    top: 3.7vh;
+}
 
-    body header .navBar .headFlex #navBar button {
-        font-size: .7vw;
-        width: 1.5vw;
-        top: 3.5vh;
-    }
+body header .navBar .leftNavSlide .leftSideBar_un-orderedList {
+    margin: 0.01vh .1vw;
+    font-size: .90vw;
+    left: 2vw;
+}
 
-    body header .navBar .leftNavSlide {
-        width: 8vw;
-    }
+body header .leftNavSlide .leftSideBar_un-orderedList #home,
+body header .leftNavSlide .leftSideBar_un-orderedList #about,
+body header .leftNavSlide .leftSideBar_un-orderedList #services,
+body header .leftNavSlide .leftSideBar_un-orderedList #projects,
+body header .leftNavSlide .leftSideBar_un-orderedList #contact {
+    margin: 0.5vh .5vw;
+}
 
-    body header .navBar .leftNavSlide .leftSideBar_un-orderedList {
-        margin: 0vh -1vw;
-    }
+main .firstSection .leftSection {
+    width: 47vw;
+    font-size: 2vw;
+    height: 100vh;
+    left: 15%;
+    top: 4%;
+}
 
-    body header .leftNavSlide .leftSideBar_un-orderedList #home,
-    body header .leftNavSlide .leftSideBar_un-orderedList #about,
-    body header .leftNavSlide .leftSideBar_un-orderedList #services,
-    body header .leftNavSlide .leftSideBar_un-orderedList #projects,
-    body header .leftNavSlide .leftSideBar_un-orderedList #contact {
-        margin: 0.5vh .5vw;
-    }
-
-} */
+main .firstSection .rightSection {
+    top: -2%;
+    width: 41vw;
+    height: 100vh;
+}
